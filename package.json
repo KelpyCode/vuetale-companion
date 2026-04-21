@@ -1,0 +1,67 @@
+{
+  "name": "vuetale",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A companion library for Vuetale.",
+  "author": "kelpy @KelpyCode",
+  "license": "MIT",
+  "homepage": "https://github.com/author/library#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/author/library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/author/library/issues"
+  },
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./cli": "./dist/cli.mjs",
+    "./types/elements": "./dist/types/elements.d.mts",
+    "./vite": "./dist/vite.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "vuetale": "./dist/cli.mjs"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "release": "bumpp",
+    "prepublishOnly": "pnpm run build"
+  },
+  "peerDependencies": {
+    "vite": ">=5"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "@typescript/native-preview": "7.0.0-dev.20260328.1",
+    "bumpp": "^11.0.1",
+    "postcss": "^8.5.10",
+    "postcss-js": "^5.1.0",
+    "tsdown": "^0.21.7",
+    "typescript": "^6.0.2",
+    "vite": "^7.3.2",
+    "vitest": "^4.1.2"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "commander": "^14.0.3",
+    "cpy": "^13.2.1",
+    "jszip": "^3.10.1",
+    "ora": "^9.3.0",
+    "tsx": "^4.21.0",
+    "vue": "^3.5.29"
+  },
+  "inlinedDependencies": {
+    "nanoid": "3.3.11",
+    "picocolors": "1.1.1",
+    "postcss": "8.5.10",
+    "postcss-js": "5.1.0",
+    "source-map-js": "1.2.1"
+  }
+}

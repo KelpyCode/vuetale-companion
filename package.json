@@ -5,13 +5,13 @@
   "description": "A companion library for Vuetale.",
   "author": "kelpy @KelpyCode",
   "license": "MIT",
-  "homepage": "https://github.com/author/library#readme",
+  "homepage": "https://github.com/KelpyCode/vuetale-companion#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/author/library.git"
+    "url": "git+https://github.com/KelpyCode/vuetale-companion.git"
   },
   "bugs": {
-    "url": "https://github.com/author/library/issues"
+    "url": "https://github.com/KelpyCode/vuetale-companion/issues"
   },
   "exports": {
     ".": "./dist/index.mjs",

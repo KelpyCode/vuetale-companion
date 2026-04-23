@@ -1,23 +1,3 @@
-# tsdown-starter
+# Vuetale companion
 
-A starter for creating a TypeScript package.
-
-## Development
-
-- Install dependencies:
-
-```bash
-npm install
-```
-
-- Run the unit tests:
-
-```bash
-npm run test
-```
-
-- Build the library:
-
-```bash
-npm run build
-```
+Vuetale companion is a companion app for Vuetale, helping you to get started with Vuetale and providing useful tools for your development.

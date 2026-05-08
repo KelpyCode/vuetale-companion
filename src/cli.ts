@@ -5,6 +5,7 @@ import chalk from 'chalk'
 import ora from 'ora'
 import fs from 'node:fs'
 import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 import cpy from 'cpy'
 import { VERSION } from './version'
 import { isViteProject } from './util'
@@ -13,7 +14,7 @@ import { main as extractDts, removeAlias } from './extract-dts'
 
 const program = new Command()
 const cwd = process.cwd()
-const cliCwd = path.dirname(import.meta.url.replace('file:/', '').replace("//", ""))
+const cliCwd = path.dirname(fileURLToPath(import.meta.url))
 
 
 function regenerateTsConfig(projectRoot: string) {

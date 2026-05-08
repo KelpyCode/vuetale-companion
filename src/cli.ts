@@ -57,9 +57,10 @@ program
         const spinner = ora(`Installing Vuetale configuration to ${p}...`).start()
 
         try {
-            await cpy([
-                path.resolve(cliCwd, 'assets', '.vscode'),
-            ], p)
+            await cpy(
+                path.join(cliCwd, 'assets', '.vscode', '*'),
+                path.join(p, '.vscode')
+            )
         } catch (err) {
             console.error(chalk.red(`Failed to install configuration: ${err instanceof Error ? err.message : String(err)}`))
             process.exit(1)

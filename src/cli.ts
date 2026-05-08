@@ -58,7 +58,7 @@ program
 
         try {
             await cpy([
-                path.resolve(cliCwd, '..', 'assets', '.vscode'),
+                path.resolve(cliCwd, 'assets', '.vscode'),
             ], p)
         } catch (err) {
             console.error(chalk.red(`Failed to install configuration: ${err instanceof Error ? err.message : String(err)}`))

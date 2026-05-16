@@ -18,6 +18,10 @@
     "./cli": "./dist/cli.mjs",
     "./types/elements": "./dist/types/elements.d.mts",
     "./vite": "./dist/vite.mjs",
+    "./vite/AssetSyncPlugin": "./dist/vite/AssetSyncPlugin.mjs",
+    "./vite/CssBuildPlugin": "./dist/vite/CssBuildPlugin.mjs",
+    "./vite/HmrIdsPlugin": "./dist/vite/HmrIdsPlugin.mjs",
+    "./vite/VuetalePlugin": "./dist/vite/VuetalePlugin.mjs",
     "./package.json": "./package.json"
   },
   "files": [

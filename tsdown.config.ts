@@ -11,7 +11,16 @@ export default defineConfig({
   },
   clean: true,
   platform: 'node',
-  entry: ['src/index.ts', 'src/vite.ts', 'src/cli.ts', 'src/types/elements.d.ts'],
+  entry: [
+    'src/index.ts',
+    'src/vite.ts',
+    'src/cli.ts',
+    'src/types/elements.d.ts',
+    'src/vite/AssetSyncPlugin.ts',
+    'src/vite/CssBuildPlugin.ts',
+    'src/vite/HmrIdsPlugin.ts',
+    'src/vite/VuetalePlugin.ts',
+  ],
 
   deps: {
     neverBundle: ['vite', 'vue'],

@@ -43,7 +43,7 @@ export function AssetSyncPlugin(rootDir: string, resourcesDir: string, modName: 
             } else {
                 tsSrc += `export type AssetFile = never\n // No assets found`
             }
-            tsSrc += `export function $asset(path: AssetFile): string { return '../@${modName}/' + path }\n`
+            tsSrc += `export function $asset(path: AssetFile): string { return '../${modName}/' + path }\n`
             // Write the asset file
             writeFileSync(tsFile, tsSrc)
 
